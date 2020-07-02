@@ -1,0 +1,26 @@
+@import "./normalize.scss";
+@import "./config.scss";
+@import "./elementui.scss";
+//引入阿里图标
+//没用这个 用的avg与插槽
+// @import "@/assets/aliicon_class/iconfont.css";
+
+
+
+//引入主题样式修改文件
+//在这里载入太慢了,改为main
+// @import "./element-variables.scss";
+
+//全局样式全部出自这个文件
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+// 定义占位空间类 用于占位
+.black-space-30 {
+  height: 30px;
+}

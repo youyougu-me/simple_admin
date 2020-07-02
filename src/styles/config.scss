@@ -1,0 +1,34 @@
+//后台框架尺寸
+//菜单宽度
+$navMenu:200px;
+//菜单收拢宽度
+$navMenuMin:64px;
+//header的高度
+$layoutHeader: 64px;
+
+//配置主色调
+$mainCcolor:#409EFF;
+$mainCcolor2:#36495d;
+//动画函数
+@mixin webkit($type, $value) {
+  -webkit-#{$type}: $value;
+  -moz-#{$type}: $value;
+  -o-#{$type}: $value;
+  -ms-#{$type}: $value;
+  #{$type}: $value;
+}
+
+//label与输入框布局函数
+//行高没有默认值就给它赋默认值
+@mixin labelDom($aligh, $width, $line-height:"normal") {
+  label {
+    float: left;
+    line-height: $line-height+px;
+    width: $width+px;
+    text-align: $aligh;
+  }
+
+  .wrap-content {
+    margin-left: $width+px;
+  }
+}

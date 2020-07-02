@@ -1,0 +1,132 @@
+//重置需要去掉scoped才能生效的elemnt组件的自带样式
+//因为这里的样式就是全局受影响
+// *******************************************
+
+//一一一侧边栏样式重置
+
+/*
+
+//展开状态下鼠标滑向(hover)一级菜单的颜色
+.el-submenu__title:hover{
+  background-color: rgba(79, 192, 141, 0.2) !important;
+}
+//展开状态下鼠标滑向(hover)二级菜单的颜色
+.el-menu-item:hover{
+  background-color: rgba(79, 192, 141, 0.2) !important;
+}
+
+
+
+//展开状态下二级菜单文字样式
+.el-submenu .el-menu-item {
+  font-size: 14px;
+  padding-left: 50px !important;
+
+  //展开状态下被点中(点击)时,二级菜单样式
+  &.is-active {
+    background-color: rgba(79, 192, 141, 0.2) !important;
+  }
+}
+
+//展开状态下,二级菜单被选中(点击)时,一级菜单的颜色
+li.el-submenu {
+  &.is-active.is-opened .el-submenu__title {
+    background-color: $mainCcolor !important;
+  }
+}
+
+// 收缩状态下,鼠标滑向一级菜单(图标)的颜色
+.close {
+  .el-submenu {
+    &.is-opened {
+      >.el-submenu__title {
+        background-color: $mainCcolor !important;
+      }
+    }
+  }
+}
+
+
+.el-menu--vertical {
+
+  // 收缩状态下,鼠标滑向一级菜单(图标),展开的二级菜单颜色
+  .el-menu {
+    background-color: $mainCcolor !important;
+  }
+
+  .el-menu-item {
+    line-height: 56px;
+  }
+
+  // 收缩状态下,鼠标滑向一级菜单(图标),展开二级菜单颜色
+  //选中的那个二级菜单的颜色
+  .el-menu-item:hover {
+    background-color: $mainCcolor !important;
+  }
+}
+
+//=============未任何操作(展开,收缩)文字颜色(一级)
+div.el-submenu__title {
+  color: rgba(0, 0, 0, 0.65) !important;
+}
+
+//=============未任何操作下拉图标颜色(一级)
+.el-submenu__title i {
+  color: rgba(0, 0, 0, 0.65) !important;
+}
+
+//未任何操作二级字体颜色
+.el-menu-item {
+  color: rgba(0, 0, 0, 0.65) !important;
+}
+
+*/
+
+// ********table表格********************
+
+div.el-table {
+  td,
+  th {
+    //文本居中
+    text-align: center;
+  }
+
+  //更改表头
+  th {
+    font-weight: bold;
+    color: #344a5f;
+  }
+
+  //行文本
+  td {
+    font-size: 14px;
+  }
+}
+
+//dialog 样式
+.el-dialog__body {
+  // padding: 10px !important;
+  padding-left: 0px !important;
+  padding-right: 40px !important;
+}
+
+.el-dialog__footer {
+  text-align: center !important;
+
+  .el-button {
+    width: 150px !important;
+  }
+}
+
+//重置form表单样式
+.el-form {
+  .el-form-item:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+//这只是针对于正常的form框的大小
+//还有下框 类跟这个不一样 还得单独设置
+div.el-form-item {
+  margin-bottom: 22px;
+}
