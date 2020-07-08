@@ -1,4 +1,3 @@
-# lollol
 
 ## Project setup
 ```
